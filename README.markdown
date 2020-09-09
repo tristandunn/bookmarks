@@ -1,6 +1,6 @@
 # bookmarks
 
-A bookmark website build with [Userbase][] and [Next.js][].
+A bookmark website built with [Userbase][] and [Next.js][].
 
 ## License
 
