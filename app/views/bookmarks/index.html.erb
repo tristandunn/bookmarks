@@ -1,0 +1,28 @@
+<%# locals: () %>
+<main class="container mx-auto mb-6 w-3xl">
+  <header class="py-4 border-b border-gray-200">
+    <div class="flex justify-between items-center mx-auto max-w-4xl">
+      <h1 class="text-xl font-semibold text-black"><%= t("title") %></h1>
+
+      <%= link_to new_bookmark_path, class: "bg-blue-600 text-white text-sm font-medium px-4 py-2 rounded hover:bg-blue-700 transition" do %>
+        <%= t(".add_bookmark") %>
+      <% end %>
+    </div>
+  </header>
+
+  <% @bookmarks.each do |bookmark| %>
+    <div class="py-4 border-b border-gray-200 last:border-0">
+      <div>
+        <%= link_to bookmark.url do %>
+          <span class="text-lg font-bold text-blue-600 hover:underline"><%= bookmark.title %></span>
+        <% end %>
+
+        <span class="ml-1 text-xs text-gray-500"><%= bookmark.domain %></span>
+      </div>
+
+      <span class="block mt-2 text-xs text-slate-500">
+        <%= t(".link.added_on", date: bookmark.created_at.to_date.to_fs(:long_ordinal), time: bookmark.created_at.strftime("%l:%M %p")) %>
+      </span>
+    </div>
+  <% end %>
+</main>

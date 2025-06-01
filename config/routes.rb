@@ -3,5 +3,7 @@
 Rails.application.routes.draw do
   get "/health", to: "health#index"
 
-  root "pages#index"
+  resources :bookmarks, only: %i(new create)
+
+  root "bookmarks#index"
 end

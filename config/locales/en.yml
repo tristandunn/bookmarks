@@ -1,2 +1,16 @@
 en:
   title: "Bookmarks"
+
+  activerecord:
+    attributes:
+      bookmark:
+        title: "Title"
+        url: "URL"
+
+  bookmarks:
+    index:
+      add_bookmark: "Add Bookmark"
+      link:
+        added_on: "Added on %{date} at %{time}."
+    new:
+      submit: "Add Bookmark"
