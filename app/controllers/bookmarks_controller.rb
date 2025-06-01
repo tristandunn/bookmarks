@@ -16,6 +16,8 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.new(bookmark_parameters)
 
     if @bookmark.save
+      SummarizeBookmarkJob.perform_later(@bookmark)
+
       redirect_to root_url
     else
       render :new

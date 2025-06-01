@@ -2,6 +2,12 @@
 
 A bookmarking application built with Ruby on Rails.
 
+## Features
+
+* Background jobs with [SolidQueue][].
+* Content summarization with [Readability][].
+* Bookmark summary generation with [RubyLLM][].
+
 ## Development
 
 Install the dependencies and setup the database.
@@ -55,3 +61,7 @@ docker run --rm -p 3000:80 -e SECRET_KEY_BASE=$(bin/rails secret) --name bookmar
 ## License
 
 Bookmarks uses the MIT license. See [LICENSE](LICENSE) for more details.
+
+[Readability]: https://github.com/cantino/ruby-readability
+[RubyLLM]: https://rubyllm.com
+[SolidQueue]: https://github.com/rails/solid_queue/

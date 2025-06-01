@@ -5,6 +5,7 @@ source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.6", require: false
+gem "faraday",           "2.13.1"
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
@@ -14,6 +15,8 @@ gem "propshaft",         "1.1.0"
 gem "puma",              "6.6.0"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
+gem "ruby_llm",          "1.2.0"
+gem "ruby-readability",  "0.7.2", require: "readability"
 gem "solid_cable",       "3.0.8"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.5"
@@ -53,4 +56,5 @@ group :test do
   gem "selenium-webdriver",       "4.33.0"
   gem "shoulda-matchers",         "6.5.0"
   gem "simplecov-console",        "0.9.3", require: false
+  gem "webmock",                  "3.25.1"
 end

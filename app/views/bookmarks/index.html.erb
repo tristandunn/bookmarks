@@ -20,6 +20,10 @@
         <span class="ml-1 text-xs text-gray-500"><%= bookmark.domain %></span>
       </div>
 
+      <p class="text-gray-600">
+        <%= bookmark.summary.presence || t(".link.summary_pending") %>
+      </p>
+
       <span class="block mt-2 text-xs text-slate-500">
         <%= t(".link.added_on", date: bookmark.created_at.to_date.to_fs(:long_ordinal), time: bookmark.created_at.strftime("%l:%M %p")) %>
       </span>
