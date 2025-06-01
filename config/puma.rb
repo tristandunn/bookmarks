@@ -33,10 +33,6 @@ threads threads_count, threads_count
 # is 3000.
 port ENV.fetch("PORT", 3000)
 
-# Run the Litestream replication process inside of Puma for
-# single-server deployments.
-plugin :litestream if ENV["LITESTREAM_IN_PUMA"]
-
 # Run the Solid Queue supervisor inside of Puma for single-server deployments.
 plugin :solid_queue if ENV["SOLID_QUEUE_IN_PUMA"]
 
