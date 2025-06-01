@@ -8,7 +8,7 @@ RubyLLM.configure do |config|
   config.openai_api_key  = ENV.fetch("OPENAI_API_KEY",       "ollama")
 end
 
-unless Rails.env.test?
+unless Rails.env.test? || ENV["SECRET_KEY_BASE_DUMMY"].present?
   Rails.application.configure do
     config.after_initialize do
       RubyLLM.models.refresh!
