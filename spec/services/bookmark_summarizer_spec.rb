@@ -6,21 +6,16 @@ describe BookmarkSummarizer do
   describe ".call" do
     subject { described_class.call(bookmark) }
 
-    let(:bookmark)   { create(:bookmark) }
-    let(:chat)       { instance_double(RubyLLM::Chat) }
-    let(:clean_html) { "<p>HTML body.</p>\n<p>More.</p>" }
-    let(:prompt)     { format(described_class::SUMMARY_PROMPT, "HTML body.\nMore.") }
-    let(:summary)    { "This is a summary of the HTML body." }
+    let(:bookmark) { create(:bookmark) }
+    let(:chat)     { instance_double(RubyLLM::Chat) }
+    let(:content)  { "HTML body.\nMore." }
+    let(:prompt)   { format(described_class::SUMMARY_PROMPT, content) }
+    let(:summary)  { "This is a summary of the HTML body." }
 
     before do
       message = instance_double(RubyLLM::Message, content: summary)
 
-      allow(PageFetcher).to receive(:call).with(bookmark.url)
-                                          .and_return("#{clean_html}<code>alert(1);</code>")
-      allow(Readability::Document).to receive(:new)
-        .with(clean_html)
-        .and_return(instance_double(Readability::Document, content: clean_html))
-
+      allow(ContentExtractor).to receive(:call).with(bookmark).and_return(content)
       allow(RubyLLM).to receive(:chat).and_return(chat)
       allow(chat).to receive(:ask).with(prompt).and_return(message)
     end
