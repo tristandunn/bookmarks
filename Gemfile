@@ -15,17 +15,17 @@ gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.0.2"
 gem "ruby_llm",          "1.3.1"
 gem "ruby-readability",  "0.7.2", require: "readability"
-gem "solid_cable",       "3.0.8"
+gem "solid_cable",       "3.0.11"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.5"
 gem "sqlite3",           "2.7.0"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.2.3"
-gem "thruster",          "0.1.13", require: false
+gem "thruster",          "0.1.14", require: false
 gem "turbo-rails",       "2.0.16"
 
 group :development, :test do
-  gem "rspec-rails", "8.0.0"
+  gem "rspec-rails", "8.0.1"
 end
 
 group :development do
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.9.0"
   gem "rack-mini-profiler",  "4.0.0"
-  gem "rubocop",             "1.76.1", require: false
+  gem "rubocop",             "1.77.0", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.27.1", require: false
   gem "rubocop-performance", "1.25.0", require: false
@@ -48,7 +48,7 @@ group :test do
   gem "capybara",                 "3.40.0"
   gem "climate_control",          "1.2.0"
   gem "database_cleaner",         "2.1.0"
-  gem "factory_bot_rails",        "6.4.4"
+  gem "factory_bot_rails",        "6.5.0"
   gem "faker",                    "3.5.1"
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.33.0"
