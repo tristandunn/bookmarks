@@ -18,7 +18,7 @@ gem "ruby-readability",  "0.7.2", require: "readability"
 gem "solid_cable",       "3.0.11"
 gem "solid_cache",       "1.0.7"
 gem "solid_queue",       "1.1.5"
-gem "sqlite3",           "2.7.0"
+gem "sqlite3",           "2.7.1"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.2.3"
 gem "thruster",          "0.1.14", require: false
@@ -51,7 +51,7 @@ group :test do
   gem "factory_bot_rails",        "6.5.0"
   gem "faker",                    "3.5.1"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.33.0"
+  gem "selenium-webdriver",       "4.34.0"
   gem "shoulda-matchers",         "6.5.0"
   gem "simplecov-console",        "0.9.3", require: false
   gem "webmock",                  "3.25.1"
