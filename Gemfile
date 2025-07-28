@@ -5,7 +5,7 @@ source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.6", require: false
-gem "faraday",           "2.13.1"
+gem "faraday",           "2.13.4"
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.1.0"
 gem "jbuilder",          "2.13.0"
