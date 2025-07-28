@@ -53,6 +53,6 @@ group :test do
   gem "rails-controller-testing", "1.0.5"
   gem "selenium-webdriver",       "4.34.0"
   gem "shoulda-matchers",         "6.5.0"
-  gem "simplecov-console",        "0.9.3", require: false
+  gem "simplecov-console",        "0.9.4", require: false
   gem "webmock",                  "3.25.1"
 end
