@@ -7,7 +7,7 @@ gem "bcrypt",            "3.1.20"
 gem "bootsnap",          "1.18.6", require: false
 gem "faraday",           "2.13.1"
 gem "hotwire-rails",     "0.1.3"
-gem "importmap-rails",   "2.1.0"
+gem "importmap-rails",   "2.2.2"
 gem "jbuilder",          "2.13.0"
 gem "propshaft",         "1.1.0"
 gem "puma",              "6.6.0"
