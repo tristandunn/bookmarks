@@ -54,5 +54,5 @@ group :test do
   gem "selenium-webdriver",       "4.36.0"
   gem "shoulda-matchers",         "6.5.0"
   gem "simplecov-console",        "0.9.4", require: false
-  gem "webmock",                  "3.25.1"
+  gem "webmock",                  "3.26.0"
 end
