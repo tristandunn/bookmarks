@@ -71,4 +71,8 @@ Rails.application.configure do
 
   # Skip DNS rebinding protection for the default health check endpoint.
   config.host_authorization = { exclude: ->(request) { request.path == "/health" } }
+
+  # Store uploaded files on the local file system.
+  # Change to a cloud storage service like S3, GCS, or Azure for production use.
+  config.active_storage.service = :local
 end

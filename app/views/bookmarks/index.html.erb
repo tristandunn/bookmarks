@@ -24,6 +24,14 @@
         <%= bookmark.summary.presence || t(".link.summary_pending") %>
       </p>
 
+      <p class="text-gray-600">
+        <% if bookmark.screenshot.attached? %>
+          <%= link_to t(".link.view_screenshot"), url_for(bookmark.screenshot), class: "text-blue-600 hover:underline" %>
+        <% else %>
+          <%= t(".link.screenshot_pending") %>
+        <% end %>
+      </p>
+
       <span class="block mt-2 text-xs text-slate-500">
         <%= t(".link.added_on", date: bookmark.created_at.to_date.to_fs(:long_ordinal), time: bookmark.created_at.strftime("%l:%M %p")) %>
       </span>

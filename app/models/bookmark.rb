@@ -3,6 +3,8 @@
 class Bookmark < ApplicationRecord
   MAXIMUM_TITLE_LENGTH = 255
 
+  has_one_attached :screenshot
+
   validates :title, presence: true, length: { maximum: MAXIMUM_TITLE_LENGTH }
   validates :url,   presence: true, uniqueness: { case_sensitive: false }
 

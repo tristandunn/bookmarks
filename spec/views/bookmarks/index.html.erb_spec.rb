@@ -42,4 +42,27 @@ describe "bookmarks/index.html.erb" do
                                   time: bookmark.created_at.strftime("%l:%M %p")))
     end
   end
+
+  context "when a bookmark has a screenshot attached" do
+    let(:bookmark_with_screenshot) { create(:bookmark) }
+    let(:bookmarks)                { [bookmark_with_screenshot] }
+
+    before do
+      bookmark_with_screenshot.screenshot.attach(
+        io: StringIO.new("PNG data"),
+        filename: "screenshot.png",
+        content_type: "image/png"
+      )
+    end
+
+    it "renders a link to view the screenshot" do
+      expect(html).to have_link(t("bookmarks.index.link.view_screenshot"))
+    end
+  end
+
+  context "when a bookmark does not have a screenshot attached" do
+    it "renders a pending message" do
+      expect(html).to have_text(t("bookmarks.index.link.screenshot_pending"))
+    end
+  end
 end

@@ -10,6 +10,10 @@ describe Bookmark do
     it { is_expected.to have_db_column(:updated_at).of_type(:datetime).with_options(null: false) }
   end
 
+  describe "attachments" do
+    it { is_expected.to have_one_attached(:screenshot) }
+  end
+
   describe "validations" do
     subject { create(:bookmark) }
 

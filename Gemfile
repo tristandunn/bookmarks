@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
-ruby   "4.0.0"
+ruby   "3.3.6"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.21"
 gem "bootsnap",          "1.20.1", require: false
 gem "faraday",           "2.14.0"
+gem "ferrum",            "0.16"
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
 gem "jbuilder",          "2.14.1"

@@ -17,6 +17,7 @@ class BookmarksController < ApplicationController
 
     if @bookmark.save
       SummarizeBookmarkJob.perform_later(@bookmark)
+      CaptureScreenshotJob.perform_later(@bookmark)
 
       redirect_to root_url
     else
