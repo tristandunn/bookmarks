@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -32,13 +32,13 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Enable the Corepack tool
         run: corepack enable
 
       - name: Install Node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           cache: "yarn"
           node-version-file: ".tool-versions"
@@ -54,7 +54,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
@@ -65,7 +65,7 @@ jobs:
         run: corepack enable
 
       - name: Install Node
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           cache: "yarn"
           node-version-file: ".tool-versions"
@@ -107,7 +107,7 @@ jobs:
 
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install Ruby
         uses: ruby/setup-ruby@v1
