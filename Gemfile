@@ -29,7 +29,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "brakeman",            "8.0.1", require: false
+  gem "brakeman",            "8.0.2", require: false
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
