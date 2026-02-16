@@ -4,7 +4,7 @@ ruby   "4.0.1"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.21"
-gem "bootsnap",          "1.22.0", require: false
+gem "bootsnap",          "1.23.0", require: false
 gem "faraday",           "2.14.0"
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
