@@ -51,7 +51,7 @@ group :test do
   gem "factory_bot_rails",        "6.5.1"
   gem "faker",                    "3.6.0"
   gem "rails-controller-testing", "1.0.5"
-  gem "selenium-webdriver",       "4.40.0"
+  gem "selenium-webdriver",       "4.41.0"
   gem "shoulda-matchers",         "7.0.1"
   gem "simplecov-console",        "0.9.5", require: false
   gem "webmock",                  "3.26.1"
