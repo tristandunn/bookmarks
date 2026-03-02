@@ -41,7 +41,7 @@ group :development do
   gem "rubocop-rake",        "0.7.1",  require: false
   gem "rubocop-rspec",       "3.9.0",  require: false
   gem "rubocop-rspec_rails", "2.32.0", require: false
-  gem "web-console",         "4.2.1"
+  gem "web-console",         "4.3.0"
 end
 
 group :test do
