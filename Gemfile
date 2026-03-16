@@ -25,7 +25,7 @@ gem "thruster",          "0.1.19", require: false
 gem "turbo-rails",       "2.0.23"
 
 group :development, :test do
-  gem "rspec-rails", "8.0.3"
+  gem "rspec-rails", "8.0.4"
 end
 
 group :development do
