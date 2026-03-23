@@ -3,7 +3,7 @@
 ruby   "4.0.2"
 source "https://rubygems.org"
 
-gem "bcrypt",            "3.1.21"
+gem "bcrypt",            "3.1.22"
 gem "bootsnap",          "1.23.0", require: false
 gem "faraday",           "2.14.1"
 gem "hotwire-rails",     "0.1.3"
@@ -12,12 +12,12 @@ gem "jbuilder",          "2.14.1"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.2.0"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "8.1.2"
+gem "rails",             "8.1.2.1"
 gem "ruby_llm",          "1.14.0"
 gem "ruby-readability",  "0.7.3", require: "readability"
 gem "solid_cable",       "3.0.12"
 gem "solid_cache",       "1.0.10"
-gem "solid_queue",       "1.3.2"
+gem "solid_queue",       "1.4.0"
 gem "sqlite3",           "2.9.2"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
@@ -33,7 +33,7 @@ group :development do
   gem "erb_lint",            "0.9.0", require: false
   gem "listen",              "3.10.0"
   gem "rack-mini-profiler",  "4.0.1"
-  gem "rubocop",             "1.85.1", require: false
+  gem "rubocop",             "1.86.0", require: false
   gem "rubocop-capybara",    "2.22.1", require: false
   gem "rubocop-factory_bot", "2.28.0", require: false
   gem "rubocop-performance", "1.26.1", require: false
@@ -54,5 +54,5 @@ group :test do
   gem "selenium-webdriver",       "4.41.0"
   gem "shoulda-matchers",         "7.0.1"
   gem "simplecov-console",        "0.9.5", require: false
-  gem "webmock",                  "3.26.1"
+  gem "webmock",                  "3.26.2"
 end
