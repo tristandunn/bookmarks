@@ -3,7 +3,7 @@
 ruby   "4.0.2"
 source "https://rubygems.org"
 
-gem "bcrypt",            "3.1.21"
+gem "bcrypt",            "3.1.22"
 gem "bootsnap",          "1.23.0", require: false
 gem "faraday",           "2.14.1"
 gem "hotwire-rails",     "0.1.3"
