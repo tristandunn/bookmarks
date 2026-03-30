@@ -12,7 +12,7 @@ gem "jbuilder",          "2.14.1"
 gem "propshaft",         "1.3.1"
 gem "puma",              "7.2.0"
 gem "rack-timeout",      "0.7.0"
-gem "rails",             "8.1.2.1"
+gem "rails",             "8.1.3"
 gem "ruby_llm",          "1.14.0"
 gem "ruby-readability",  "0.7.3", require: "readability"
 gem "solid_cable",       "3.0.12"
@@ -21,7 +21,7 @@ gem "solid_queue",       "1.4.0"
 gem "sqlite3",           "2.9.2"
 gem "stimulus-rails",    "1.3.4"
 gem "tailwindcss-rails", "4.4.0"
-gem "thruster",          "0.1.19", require: false
+gem "thruster",          "0.1.20", require: false
 gem "turbo-rails",       "2.0.23"
 
 group :development, :test do
