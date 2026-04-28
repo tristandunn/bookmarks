@@ -4,13 +4,13 @@ ruby   "4.0.2"
 source "https://rubygems.org"
 
 gem "bcrypt",            "3.1.22"
-gem "bootsnap",          "1.23.0", require: false
+gem "bootsnap",          "1.24.0", require: false
 gem "faraday",           "2.14.1"
 gem "hotwire-rails",     "0.1.3"
 gem "importmap-rails",   "2.2.3"
 gem "jbuilder",          "2.14.1"
 gem "propshaft",         "1.3.2"
-gem "puma",              "8.0.0"
+gem "puma",              "8.0.1"
 gem "rack-timeout",      "0.7.0"
 gem "rails",             "8.1.3"
 gem "ruby_llm",          "1.14.1"
