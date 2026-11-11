@@ -38,10 +38,11 @@ bundle exec rake ruby:lint
 bundle exec rake javascript:lint
 ```
 
-Or you can run the tests with coverage and lint with a single command.
+Or you can run the setup, linting, security audits, and tests with coverage
+using a single command, which is also what CI runs.
 
 ```
-bundle exec rake check
+bin/ci
 ```
 
 ### Docker

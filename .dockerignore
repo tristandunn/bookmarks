@@ -29,6 +29,7 @@
 
 # Ignore binary files.
 bin/brakeman
+bin/ci
 bin/dev
 bin/mocha
 bin/rubocop
